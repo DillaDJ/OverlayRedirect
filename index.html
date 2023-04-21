@@ -5,8 +5,9 @@
 	<script>
         
 		var url = window.location.href;
-		console.log(url);
-        
+		var queryString = url.substring(url.indexOf('?') + 1);
+		window.location.replace("overlayeditor://" + queryString);
+
 	</script>
 </head>
 
