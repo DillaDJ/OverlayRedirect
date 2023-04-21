@@ -1,14 +1,12 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-	<title>Get URL Example</title>
+	<title>Redirecting...</title>
 	<script>
-        
 		var url = window.location.href;
 		var queryString = url.substring(url.indexOf('?') + 1);
 		window.location.replace("overlayeditor:" + queryString);
-
+		//window.close();
 	</script>
 </head>
 
